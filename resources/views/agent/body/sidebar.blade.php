@@ -10,7 +10,7 @@ $status = $agencyId->status;
         
       <div class="sidebar-header">
         <a href="#" class="sidebar-brand">
-          Noble<span>UI</span>
+          Home <span>Hub</span>
         </a>
         <div class="sidebar-toggler not-active">
           <span></span>
@@ -34,7 +34,7 @@ $status = $agencyId->status;
         
             <div class="sidebar-header">
               <a href="#" class="sidebar-brand">
-                Noble<span>UI</span>
+                Home <span>Hub</span>
               </a>
               <div class="sidebar-toggler not-active">
                 <span></span>
