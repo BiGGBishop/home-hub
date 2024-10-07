@@ -9,7 +9,7 @@
 	<meta name="author" content="NobleUI">
 	<meta name="keywords" content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
-	<title>NobleUI - HTML Bootstrap 5 Admin Dashboard Template</title>
+	<title>Home Hub | Estate Listng</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +53,7 @@
                 </div>
                 <div class="col-md-8 ps-md-0">
                   <div class="auth-form-wrapper px-4 py-5">
-                    <a href="#" class="noble-ui-logo logo-light d-block mb-2">Noble<span>UI</span></a>
+                    <a href="#" class="noble-ui-logo logo-light d-block mb-2">Home <span>Hub</span></a>
                     <h5 class="text-muted fw-normal mb-4">Welcome back! Log in to your account.</h5>
                     <form class="forms-sample" method="post" action="{{ route('login') }}">
                         @csrf

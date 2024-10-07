@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Home Hub - Estate Listing</title>
-    <meta name="AdsBot-Google" content="noindex follow" />
+    <meta name="AdsBot-Google" content="Home Hub | Estate Listng" />
     <meta name="description" content="Home Hub Estate Listing">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -63,6 +63,7 @@
     </div>
 
      <!-- JS Vendor, Plugins & Activation Script Files -->
+     
 
     <!-- Vendors JS -->
     <script src="{{asset('frontend/assets/js/vendor/modernizr-3.11.7.min.js')}}"></script>

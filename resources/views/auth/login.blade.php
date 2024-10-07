@@ -5,11 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Responsive HTML Admin Dashboard Template based on Bootstrap 5">
-	<meta name="author" content="NobleUI">
+  <title>Home Hub - Estate Listing</title>
+  <meta name="AdsBot-Google" content="Home Hub | Estate Listng" />
+  <meta name="description" content="Home Hub Estate Listing">
 	<meta name="keywords" content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
-
-	<title>NobleUI - HTML Bootstrap 5 Admin Dashboard Template</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +51,7 @@
                 </div>
                 <div class="col-md-8 ps-md-0">
                   <div class="auth-form-wrapper px-4 py-5">
-                    <a href="#" class="noble-ui-logo logo-light d-block mb-2">Noble<span>UI</span></a>
+                    <a href="#" class="noble-ui-logo logo-light d-block mb-2">Home <span>Hub</span></a>
                     <h5 class="text-muted fw-normal mb-4">Welcome back! Log in to your account.</h5>
                     <form class="forms-sample" method="POST" action="{{ route('login') }}">
                         @csrf
