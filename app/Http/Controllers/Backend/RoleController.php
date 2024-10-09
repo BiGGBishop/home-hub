@@ -31,7 +31,7 @@ class RoleController extends Controller
     {
         $permission = Permission::create([
             'name' => $request->name,
-            'group_name' => $request->group_name,
+            'guard_name' => $request->guard_name,
         ]);
         $notification = array(
             'message' => 'Permission Created Succesfully',
@@ -55,7 +55,7 @@ class RoleController extends Controller
 
         Permission::findOrFail($permission_id)->update([
             'name' => $request->name,
-            'group_name' => $request->group_name,
+            'guard_name' => $request->guard_name,
         ]);
 
         
