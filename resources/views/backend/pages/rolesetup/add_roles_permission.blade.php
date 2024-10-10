@@ -46,13 +46,13 @@
                                             <div class="form-check mb-2">
                                                 <input type="checkbox" class="form-check-input" id="checkDefault">
                                                     <label class="form-check-label" for="checkDefault">
-                                                        {{$group->group_name}}
+                                                        {{$group->guard_name}}
                                                     </label>
                                                 </div>
                                         </div>
                                         <div class="col-9">
                                             @php
-                                                $permissions = App\Models\USer::getpermissionByGroupName($group->group_name);
+                                                $permissions = App\Models\USer::getpermissionByGroupName($group->guard_name);
                                             @endphp
                                             @foreach ( $permissions as $permission)
                                                 

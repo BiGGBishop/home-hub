@@ -19,7 +19,7 @@
 
                                     <div class="form-group mb-3">
 										<label for="exampleInputText1" class="form-label">Group Name</label>
-										<select class="form-select" name="group_name" id="exampleFormControlSelect1">
+										<select class="form-select" name="guard_name" id="exampleFormControlSelect1">
 											<option selected="" disabled="">Select Group</option>
 											<option value="type">Property Type</option>
 											<option value="amenities">Amenities</option>
@@ -46,7 +46,7 @@
                             required : true,
                         }, 
 
-                        group_name: {
+                        guard_name: {
                             required : true,
                         }, 
                         
@@ -56,7 +56,7 @@
                             required : 'Please Enter Permission Name',
                         }, 
 
-                        group_name: {
+                        guard_name: {
                             required : 'Please Enter Permission Group',
                         }, 
                          

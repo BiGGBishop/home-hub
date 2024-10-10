@@ -40,12 +40,8 @@
             <td>{{ $types->type_name }}</td>
             <td>{{ $types->type_icon }}</td>
             <td>
-              @if (Auth::user()->can('edit.type'))
                 <a href="{{ route('edit.type', $types->id) }}" class="btn btn-primary mb-1 mb-md-0">Edit</a>
-                @endif
-                @if (Auth::user()->can('delete.type'))
                 <a href="{{ route('delete.type', $types->id) }}" id="delete" class="btn btn-danger mb-1 mb-md-0">Delete</a>
-                @endif
             </td>
           </tr>
          

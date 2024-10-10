@@ -83,8 +83,10 @@ Route::middleware(['auth','roles:admin'])->group(function(){
 
    
     Route::controller(PropertyTypeController::class)->group(function(){
-        Route::get('all/type', 'AllType')->name('all.type')->middleware('permission:all.type');
-        Route::get('add/type', 'AddPropertyType')->name('add.type')->middleware('permission:add.type');
+        // Route::get('all/type', 'AllType')->name('all.type')->middleware('permission:all.type');
+        // Route::get('add/type', 'AddPropertyType')->name('add.type')->middleware('permission:add.type');
+        Route::get('all/type', 'AllType')->name('all.type');
+        Route::get('add/type', 'AddPropertyType')->name('add.type');
         Route::post('create/type', 'CreatePropertyType')->name('create.property.type');
         Route::get('delete/type/{id}', 'DeletePropertyType')->name('delete.type');
         Route::get('edit/type/{id}', 'EditPropertyType')->name('edit.type')->middleware('permission:edit.type');
@@ -92,7 +94,8 @@ Route::middleware(['auth','roles:admin'])->group(function(){
     });
 
     Route::controller(AmenitesController::class)->group(function(){
-        Route::get('all/amenities', 'AllAmenities')->name('all.amenities')->middleware('permission:all.amenities');
+        // Route::get('all/amenities', 'AllAmenities')->name('all.amenities')->middleware('permission:all.amenities');
+        Route::get('all/amenities', 'AllAmenities')->name('all.amenities');
         Route::get('add/amenities', 'AddAmenities')->name('add.amenities');
         Route::get('edit/amenities/{id}', 'EditAmenities')->name('edit.amenities');
         Route::get('delete/amenities/{id}', 'DeleteAmenities')->name('delete.amenities');
