@@ -24,7 +24,7 @@
                                             <select class=" form-select"  name="category_id" data-width="100%">
 
                                                 @foreach ( $type as $item )
-                                                    <option value="{{ $item->id }}">{{ $item->category_name }}</option>
+                                                    <option value="{{ $item->id }}">{{ $item->type_name }}</option>
                                                 @endforeach
                                             </select>
                                         </div>

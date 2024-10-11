@@ -8,6 +8,7 @@ use App\Models\Building;
 use App\Models\Category;
 use App\Models\Place;
 use App\Models\Property;
+use App\Models\PropertyType;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
@@ -26,7 +27,7 @@ class PropertyController extends Controller
     {
         $agencies = User::where('role', 'agent')->where('status', 'active')->orderBy('id', 'DESC')->get();
         $places = Place::orderBy('id', 'DESC')->get();
-        $type = Category::orderBy('id', 'DESC')->get();
+        $type = PropertyType::get();
         $buildings = Building::orderBy('id', 'DESC')->get();
         $amenity = Amenities::orderBy('id', 'DESC')->get();
         return view('backend.property.add_property', compact('agencies', 'places', 'type', 'buildings', 'amenity'));

@@ -34,12 +34,8 @@
             <td>{{ $key+1 }}</td>
             <td>{{ $item->building_name }}</td>
             <td>
-              @if (Auth::user()->can('edit.building'))
                 <a href="{{ route('edit.building',$item->id) }}" class="btn btn-primary mb-1 mb-md-0">Edit</a>
-                @endif
-                @if (Auth::user()->can('delete.building'))
                 <a href="{{ route('delete.building',$item->id) }}" id="delete" class="btn btn-danger mb-1 mb-md-0">Delete</a>
-                @endif
               </td>
           </tr>
          

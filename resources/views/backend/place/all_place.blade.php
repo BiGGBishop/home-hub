@@ -36,12 +36,8 @@
             <td>{{ $item->place_name }}</td>
             <td> <img src="{{ asset($item->place_image) }}" style="width: 70px; height:40px;" >  </td>
             <td>
-              @if (Auth::user()->can('edit.slider'))
                 <a href="{{ route('edit.place',$item->id) }}" class="btn btn-primary mb-1 mb-md-0">Edit</a>
-                @endif
-                @if (Auth::user()->can('delete.slider'))
                 <a href="{{ route('delete.place',$item->id) }}" id="delete" class="btn btn-danger mb-1 mb-md-0">Delete</a>
-                @endif
               </td>
           </tr>
          
