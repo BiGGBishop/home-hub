@@ -4,7 +4,7 @@
             <div class="col-span-12">
                 <div class="flex flex-wrap items-center justify-between">
                     <a href="{{route('frontend')}}" class="block">
-                        <img class="w-full h-full" src="{{asset('frontend/assets/images/logo/logo.png')}}" loading="lazy" width="70" height="30" alt="brand logo">
+                        <img class="w-full h-full mb-2" src="{{asset('frontend/assets/images/logo/logo.png')}}" loading="lazy" width="70" height="30" alt="brand logo">
                     </a>
                     <nav class="flex flex-wrap items-center">
                         <ul class="hidden lg:flex flex-wrap items-center font-recoleta text-[16px] xl:text-[18px] leading-none text-black">

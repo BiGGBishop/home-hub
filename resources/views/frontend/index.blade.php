@@ -585,7 +585,7 @@
         <div class="grid grid-cols-12">
             <div class="col-span-12 lg:col-span-7">
                 <div class="scene" data-relative-input="true">
-                    <img data-depth="0.1" src="{{asset('frontend/assets/images/about/about.png')}}" class="2xl:ml-[-130px] mx-auto lg:max-w-[500px] xl:max-w-[729px]" loading="lazy" width="729" height="663" alt="about Image">
+                    <img data-depth="0.1" src="{{asset('frontend/assets/images/about/about2.png')}}" class="2xl:ml-[-130px] mx-auto lg:max-w-[500px] xl:max-w-[729px]" loading="lazy" width="729" height="663" alt="about Image">
                 </div>
             </div>
             <div class="col-span-12 lg:col-span-5">
@@ -696,19 +696,19 @@
 
 
         <!-- Testimonial carousel Start -->
-        @include('frontend.home.home_testimonial')
+        {{-- @include('frontend.home.home_testimonial') --}}
         <!-- Testimonial carousel End -->
 
 
 
         <!-- Brand section Start-->
-        @include('frontend.home.home_brand')
+        {{-- @include('frontend.home.home_brand') --}}
 
          <!-- Brand section End-->
 
 
         <!-- Blog Section Start  -->
-        @include('frontend.home.home_blog')
+        {{-- @include('frontend.home.home_blog') --}}
         <!-- Blog Section End  -->
 
 

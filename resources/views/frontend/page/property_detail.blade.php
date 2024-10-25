@@ -51,7 +51,7 @@
                        
                     </div>
 
-                    <div class="flex flex-wrap mb-[15px]">
+                    {{-- <div class="flex flex-wrap mb-[15px]">
                         <span class="text-secondary">Share:</span>
                         <ul class="inline-flex items-center justify-center">
                             <li class="ml-[15px]"><a href="#" class="w-[26px] h-[26px] transition-all rounded-full bg-[#FFF6F0] flex items-center justify-center hover:drop-shadow-[0px_4px_10px_rgba(0,0,0,0.25)] text-[#494949] hover:text-[#3B5998]">
@@ -73,7 +73,7 @@
                                     </svg>
                                 </a></li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
 
                 
@@ -296,7 +296,7 @@
 @endphp
                    
 
-                    <div class="bg-[#f5f9f8] px-[20px] lg:px-[15px] xl:px-[35px] py-[50px] rounded-[8px] mb-[40px]">
+                    {{-- <div class="bg-[#f5f9f8] px-[20px] lg:px-[15px] xl:px-[35px] py-[50px] rounded-[8px] mb-[40px]">
                         <h3 class="text-primary leading-none text-[24px] font-recoleta underline mb-[30px]">Our Agents<span
                             class="text-secondary">.</span></h3>
 
@@ -318,7 +318,7 @@
                             @endforeach
                             <!-- single team end-->
                         </div>
-                    </div>
+                    </div> --}}
 
 
 
@@ -350,7 +350,7 @@
 
 <!-- Brand section Start-->
 
-@include('frontend.home.home_brand')
+{{-- @include('frontend.home.home_brand') --}}
 
 <!-- Brand section End-->
 

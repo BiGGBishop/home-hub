@@ -449,7 +449,7 @@
 
                             </div> --}}
 
-                            <div class="bg-[#f5f9f8] px-[20px] lg:px-[15px] xl:px-[35px] py-[50px] rounded-[8px] mb-[40px]">
+                            {{-- <div class="bg-[#f5f9f8] px-[20px] lg:px-[15px] xl:px-[35px] py-[50px] rounded-[8px] mb-[40px]">
                                 <h3 class="text-primary leading-none text-[24px] font-recoleta underline mb-[30px]">Our Agents<span
                                      class="text-secondary">.</span></h3>
 
@@ -477,7 +477,7 @@
 
                                     <!-- single team end-->
                                 </div>
-                            </div>
+                            </div> --}}
 
                        
                         </aside>
@@ -493,7 +493,7 @@
 
        <!-- Brand section Start-->
 
-@include('frontend.home.home_brand')
+{{-- @include('frontend.home.home_brand') --}}
 
 <!-- Brand section End-->
 
