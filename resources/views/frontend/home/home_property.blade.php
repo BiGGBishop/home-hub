@@ -1,5 +1,5 @@
 @php
-     $popularProducts = App\Models\Property::orderBy('popularity', 'desc')->take(3)->get();
+     $popularProducts = App\Models\Property::where('status', 1)->orderBy('popularity', 'desc')->take(3)->get();
 
 @endphp
 <!-- Popular Properties start -->

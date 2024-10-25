@@ -126,25 +126,20 @@ $messageslist = App\Models\AgentMessages::where('agency_id', $agency_id)->orderB
               </div>
             </div>
             <div class="d-flex flex-column">
-
               @foreach ( $messageslist as $item )
-                
-              
-              <a href="{{ route('view.message',$item->id) }}" class="d-flex align-items-center border-bottom py-3">
-                <div class="me-3">
-                  <img src="{{asset('frontend/assets/images/user/avater.png')}}" class="rounded-circle wd-35" alt="user">
-                </div>
-                <div class="w-100">
-                  <div class="d-flex justify-content-between">
-                    <h6 class="text-body mb-2">{{$item->frist_name}} {{$item->last_name}}</h6>
-                    <p class="text-muted tx-12">{{date("g:i a", strtotime($item->created_at))}}</p>
+                <a href="{{ route('view.message',$item->id) }}" class="d-flex align-items-center border-bottom py-3">
+                  <div class="me-3">
+                    <img src="{{asset('frontend/assets/images/user/avater.png')}}" class="rounded-circle wd-35" alt="user">
                   </div>
-                  <p class="text-muted tx-13">Hey! there I'm available...</p>
-                </div>
-              </a>
-             @endforeach
-              
-
+                  <div class="w-100">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="text-body mb-2">{{$item->frist_name}} {{$item->last_name}}</h6>
+                      <p class="text-muted tx-12">{{date("g:i a", strtotime($item->created_at))}}</p>
+                    </div>
+                    <p class="text-muted tx-13">{{$item->messsage}}</p>
+                  </div>
+                </a>
+              @endforeach
             </div>
           </div>
         </div>
@@ -183,10 +178,10 @@ $messageslist = App\Models\AgentMessages::where('agency_id', $agency_id)->orderB
                     <td>{{$item->property_name}}</td>
                     <td>{{ Str::limit($item->property_address, 20, '...') }}</td>
                     <td>
-                      @if ($item->staus == '0')
-                        <span class="badge bg-danger">Inactive</span>
-                        @else
-                        <span class="badge bg-success">Active</span>
+                      @if($item->status == 1)
+                        <span class="badge rounded-pill bg-success">Active</span>
+                      @else
+                        <span class="badge rounded-pill bg-danger">InActive</span>
                       @endif
                     </td>
                     <td>{{$item->popularity}}</td>

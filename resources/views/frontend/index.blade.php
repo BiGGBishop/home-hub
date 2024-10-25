@@ -176,23 +176,23 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/location.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="location2" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Location</label>
-                                    <input id="location2" type="text" placeholder="Choose location" class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full">
+                                    <label for="location" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Location</label>
+                                    <input id="location" type="text" placeholder="Choose location" class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full">
                                 </div>
                             </div>
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/property.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="property2" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Property
+                                    <label for="property" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Property
                                         Type</label>
-                                    <select name="property" id="property2" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
-                                        <option selected value="0">Apartments</option>
+                                    <select name="property" id="property" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Duplex House</option>
                                         <option value="1">Duplex House 1</option>
                                         <option value="2">Duplex House 2</option>
                                         <option value="3">Duplex House 3</option>
@@ -202,16 +202,16 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/dollar-circle.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="price2" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Price
+                                    <label for="price" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Price
                                         Range</label>
-                                    <select name="price" id="price2" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
-                                        <option selected value="0">100 USD</option>
-                                        <option value="1">600 USD</option>
-                                        <option value="2">700 USD</option>
-                                        <option value="3">800 USD</option>
+                                    <select name="price" id="price" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">1500 USD</option>
+                                        <option value="1">1600 USD</option>
+                                        <option value="2">1700 USD</option>
+                                        <option value="3">1800 USD</option>
                                     </select>
                                 </div>
 
@@ -220,21 +220,21 @@
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] relative">
 
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/area.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/area.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
 
                                 <div class="flex-1">
-                                    <label for="property-size2" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Property
+                                    <label for="property-size" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Property
                                         Size</label>
-                                    <select name="property-size" id="property-size2" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
-                                        <option selected value="0">500 Sqft</option>
-                                        <option value="1">600 Sqft</option>
-                                        <option value="2">700 Sqft</option>
-                                        <option value="3">800 Sqft</option>
+                                    <select name="property-size" id="property-size" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">2500 Sqft</option>
+                                        <option value="1">2600 Sqft</option>
+                                        <option value="2">2700 Sqft</option>
+                                        <option value="3">2800 Sqft</option>
                                     </select>
                                 </div>
                                 <button class="search-btn absolute right-0 lg:right-[-60px] xl:right-[-70px]">
-                                    <img src="assets/images/icon/search-outline.svg" class="max-w-[30px] xl:w-auto" width="40" height="40" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/search-outline.svg')}}" class="max-w-[30px] xl:w-auto" width="40" height="40" alt="svg icon">
                                     <span class="hidden">Search Properties</span>
                                 </button>
                             </div>
@@ -242,15 +242,16 @@
                         </div>
 
 
+
                         <div class="advanced-searrch-hidden flex flex-wrap items-center mt-[45px] -mb-[45px]">
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/location.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="bedrooms" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Bedrooms</label>
-                                    <select name="property" id="bedrooms" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                    <label for="bedrooms10" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Bedrooms</label>
+                                    <select name="property" id="bedrooms10" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
                                         <option selected value="0">Bedrooms</option>
                                         <option value="1">kitchen</option>
                                         <option value="2">dinning rooms</option>
@@ -261,11 +262,11 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/property.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="property3" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Bathrooms</label>
-                                    <select name="property" id="property3" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                    <label for="property9" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Bathrooms</label>
+                                    <select name="property" id="property9" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
                                         <option selected value="0">Duplex House</option>
                                         <option value="1">Duplex House 1</option>
                                         <option value="2">Duplex House 2</option>
@@ -276,11 +277,11 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/dollar-circle.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="garage2" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Garage</label>
-                                    <select name="garage" id="garage2" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                    <label for="garage" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Garage</label>
+                                    <select name="garage" id="garage" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
                                         <option selected value="0">2 Garage</option>
                                         <option value="1">2 Garage</option>
                                         <option value="2">3 Garage</option>
@@ -308,22 +309,22 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/location.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="location7" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Location</label>
-                                    <input id="location7" type="text" placeholder="Choose location" class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full">
+                                    <label for="location" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Location</label>
+                                    <input id="location" type="text" placeholder="Choose location" class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full">
                                 </div>
                             </div>
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/property.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="property8" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Property
+                                    <label for="property" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Property
                                         Type</label>
-                                    <select name="property" id="property8" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                    <select name="property" id="property" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
                                         <option selected value="0">Duplex House</option>
                                         <option value="1">Duplex House 1</option>
                                         <option value="2">Duplex House 2</option>
@@ -334,12 +335,12 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/dollar-circle.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="price7" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Price
+                                    <label for="price" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Price
                                         Range</label>
-                                    <select name="price" id="price7" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                    <select name="price" id="price" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
                                         <option selected value="0">1500 USD</option>
                                         <option value="1">1600 USD</option>
                                         <option value="2">1700 USD</option>
@@ -352,13 +353,13 @@
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] relative">
 
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/area.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/area.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
 
                                 <div class="flex-1">
-                                    <label for="property-size9" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Property
+                                    <label for="property-size" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Property
                                         Size</label>
-                                    <select name="property-size" id="property-size9" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                    <select name="property-size" id="property-size" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
                                         <option selected value="0">2500 Sqft</option>
                                         <option value="1">2600 Sqft</option>
                                         <option value="2">2700 Sqft</option>
@@ -366,7 +367,7 @@
                                     </select>
                                 </div>
                                 <button class="search-btn absolute right-0 lg:right-[-60px] xl:right-[-70px]">
-                                    <img src="assets/images/icon/search-outline.svg" class="max-w-[30px] xl:w-auto" width="40" height="40" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/search-outline.svg')}}" class="max-w-[30px] xl:w-auto" width="40" height="40" alt="svg icon">
                                     <span class="hidden">Search Properties</span>
                                 </button>
                             </div>
@@ -379,11 +380,11 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/location.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="bedrooms6" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Bedrooms</label>
-                                    <select name="property" id="bedrooms6" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                    <label for="bedrooms10" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Bedrooms</label>
+                                    <select name="property" id="bedrooms10" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
                                         <option selected value="0">Bedrooms</option>
                                         <option value="1">kitchen</option>
                                         <option value="2">dinning rooms</option>
@@ -394,11 +395,11 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/property.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="property7" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Bathrooms</label>
-                                    <select name="property" id="property7" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                    <label for="property9" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Bathrooms</label>
+                                    <select name="property" id="property9" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
                                         <option selected value="0">Duplex House</option>
                                         <option value="1">Duplex House 1</option>
                                         <option value="2">Duplex House 2</option>
@@ -409,11 +410,11 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/dollar-circle.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="garage20" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Garage</label>
-                                    <select name="garage" id="garage20" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                    <label for="garage" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Garage</label>
+                                    <select name="garage" id="garage" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
                                         <option selected value="0">2 Garage</option>
                                         <option value="1">2 Garage</option>
                                         <option value="2">3 Garage</option>
@@ -440,23 +441,23 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/location.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="location6" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Location</label>
-                                    <input id="location6" type="text" placeholder="Choose location" class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full">
+                                    <label for="location" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Location</label>
+                                    <input id="location" type="text" placeholder="Choose location" class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full">
                                 </div>
                             </div>
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/property.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="property6" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Property
+                                    <label for="property" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Property
                                         Type</label>
-                                    <select name="property" id="property6" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
-                                        <option selected value="0">Apartments</option>
+                                    <select name="property" id="property" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Duplex House</option>
                                         <option value="1">Duplex House 1</option>
                                         <option value="2">Duplex House 2</option>
                                         <option value="3">Duplex House 3</option>
@@ -466,16 +467,16 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/dollar-circle.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="price6" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Price
+                                    <label for="price" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Price
                                         Range</label>
-                                    <select name="price" id="price6" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
-                                        <option selected value="0">5500 USD</option>
-                                        <option value="1">5600 USD</option>
-                                        <option value="2">5700 USD</option>
-                                        <option value="3">5800 USD</option>
+                                    <select name="price" id="price" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">1500 USD</option>
+                                        <option value="1">1600 USD</option>
+                                        <option value="2">1700 USD</option>
+                                        <option value="3">1800 USD</option>
                                     </select>
                                 </div>
 
@@ -484,21 +485,21 @@
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] relative">
 
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/area.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/area.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
 
                                 <div class="flex-1">
-                                    <label for="property-size4" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Property
+                                    <label for="property-size" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Property
                                         Size</label>
-                                    <select name="property-size" id="property-size4" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
-                                        <option selected value="0">3500 Sqft</option>
-                                        <option value="1">3600 Sqft</option>
-                                        <option value="2">3700 Sqft</option>
-                                        <option value="3">3800 Sqft</option>
+                                    <select name="property-size" id="property-size" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">2500 Sqft</option>
+                                        <option value="1">2600 Sqft</option>
+                                        <option value="2">2700 Sqft</option>
+                                        <option value="3">2800 Sqft</option>
                                     </select>
                                 </div>
                                 <button class="search-btn absolute right-0 lg:right-[-60px] xl:right-[-70px]">
-                                    <img src="assets/images/icon/search-outline.svg" class="max-w-[30px] xl:w-auto" width="40" height="40" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/search-outline.svg')}}" class="max-w-[30px] xl:w-auto" width="40" height="40" alt="svg icon">
                                     <span class="hidden">Search Properties</span>
                                 </button>
                             </div>
@@ -511,11 +512,11 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/location.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="bedrooms4" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Bedrooms</label>
-                                    <select name="property" id="bedrooms4" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                    <label for="bedrooms10" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Bedrooms</label>
+                                    <select name="property" id="bedrooms10" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
                                         <option selected value="0">Bedrooms</option>
                                         <option value="1">kitchen</option>
                                         <option value="2">dinning rooms</option>
@@ -526,11 +527,11 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/property.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="property4" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Bathrooms</label>
-                                    <select name="property" id="property4" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                    <label for="property9" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Bathrooms</label>
+                                    <select name="property" id="property9" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
                                         <option selected value="0">Duplex House</option>
                                         <option value="1">Duplex House 1</option>
                                         <option value="2">Duplex House 2</option>
@@ -541,11 +542,11 @@
 
                             <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
                                 <div class="mr-4 self-start shrink-0">
-                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24" alt="svg icon">
+                                    <img src="{{asset('frontend/assets/images/icon/dollar-circle.svg')}}" width="24" height="24" alt="svg icon">
                                 </div>
                                 <div class="flex-1">
-                                    <label for="garage4" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Garage</label>
-                                    <select name="garage" id="garage4" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                    <label for="garage" class="font-recoleta block capitalize text-primary text-[18px] xl:text-[25px] leading-none mb-1">Garage</label>
+                                    <select name="garage" id="garage" class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
                                         <option selected value="0">2 Garage</option>
                                         <option value="1">2 Garage</option>
                                         <option value="2">3 Garage</option>
@@ -573,7 +574,7 @@
 <!-- Addvanced search tab end -->
 
 <!-- Explore Cities Start-->
-@include('frontend.home.home_place')
+{{-- @include('frontend.home.home_place') --}}
 
 <!-- Explore Cities End-->
 
