@@ -233,30 +233,9 @@
 
 
          
-          <li class="nav-item nav-category">Role And Permission</li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#roles" role="button" aria-expanded="false" aria-controls="emails">
-              <i class="link-icon" data-feather="mail"></i>
-              <span class="link-title">Auth permission</span>
-              <i class="link-arrow" data-feather="chevron-down"></i>
-            </a>
-            <div class="collapse" id="roles">
-              <ul class="nav sub-menu">
-                <li class="nav-item">
-                  <a href="{{route('all.permission')}}" class="nav-link">All Permission</a>
-                </li>
-                <li class="nav-item">
-                  <a href="{{route('all.roles')}}" class="nav-link">All Roles</a>
-                </li>
-                <li class="nav-item">
-                  <a href="{{route('add.role.permission')}}" class="nav-link">Roles & Permission</a>
-                </li>
-                <li class="nav-item">
-                  <a href="{{route('all.role.permission')}}" class="nav-link">All Roles & Permission</a>
-                </li>
-              </ul>
-            </div>
-          </li>
+          {{-- <li class="nav-item nav-category">Role And Permission</li> --}}
+          <li class="nav-item nav-category">Manage Users</li>
+          {{-- <li c9 --}}
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#admin" role="button" aria-expanded="false" aria-controls="emails">
               <i class="link-icon" data-feather="mail"></i>

@@ -52,7 +52,7 @@ $status = $agencyId->status;
                   </a>
                 </li>
                 <li class="nav-item nav-category">Agents</li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                   <a class="nav-link" data-bs-toggle="collapse" href="#agentagent" role="button" aria-expanded="false" aria-controls="agentagent">
                     <i class="link-icon" data-feather="mail"></i>
                     <span class="link-title">Agents</span>
@@ -69,7 +69,7 @@ $status = $agencyId->status;
                      
                     </ul>
                   </div>
-                </li>
+                </li> --}}
 
 
                 <li class="nav-item">

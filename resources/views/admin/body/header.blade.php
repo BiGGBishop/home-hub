@@ -14,7 +14,7 @@
             </form>
             <ul class="navbar-nav">
                
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="appsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i data-feather="grid"></i>
                     </a>
@@ -181,7 +181,7 @@
                             <a href="javascript:;">View all</a>
                         </div>
                     </div>
-                </li>
+                </li> --}}
                 @php
                         $id = Auth::user()->id;
                         $admin_data = App\Models\User::find($id);

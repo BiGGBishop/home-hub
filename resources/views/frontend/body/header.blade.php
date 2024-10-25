@@ -42,9 +42,12 @@
                             </li> --}}
                         </ul>
 
-                        <ul class="flex flex-wrap items-center">
-                            <li>
+                        <ul class="flex flex-wrap items-center space-x-10">
+                            <li class="ml-4">
                                 <a href="{{route('agent.register')}}" class="before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-secondary before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-[20px] py-[15px] capitalize font-medium text-white hidden sm:block text-[14px] xl:text-[16px] relative after:block after:absolute after:inset-0 after:-z-[2] after:bg-primary after:rounded-md after:transition-all">Become Agency</a>
+                            </li>
+                            <li>
+                                {{-- <a href="{{route('login')}}" class="before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-secondary before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-[20px] py-[15px] capitalize font-medium text-white hidden sm:block text-[14px] xl:text-[16px] relative after:block after:absolute after:inset-0 after:-z-[2] after:bg-primary after:rounded-md after:transition-all">Login</a> --}}
                             </li>
                             <li class="ml-2 sm:ml-5 lg:hidden">
                                 <a href="#offcanvas-mobile-menu" class="offcanvas-toggle flex text-[#016450] hover:text-secondary">
@@ -81,7 +84,7 @@
                      <a href="{{route('frontend')}}" class="block capitalize font-normal text-black hover:text-secondary text-base my-2 py-1 px-5">Home</a>
                     
                  </li>
-                 <li class="relative block border-b-primary border-b">
+                 {{-- <li class="relative block border-b-primary border-b">
                      <a href="about.html" class="block capitalize font-normal text-black hover:text-secondary text-base my-2 py-1 px-5">About</a>
                      <ul class="offcanvas-submenu static top-auto hidden w-full visible opacity-100 capitalize">
                          <li><a class="text-sm py-2 px-[30px] text-black font-light block transition-all hover:text-secondary" href="about.html">About</a></li>
@@ -89,7 +92,7 @@
                          <li><a class="text-sm py-2 px-[30px] text-black font-light block transition-all hover:text-secondary" href="about-v2.html">About v2</a></li>
                      </ul>
 
-                 </li>
+                 </li> --}}
                  <li class="relative block border-b-primary border-b">
                      <a href="{{route('view.property')}}" class="block capitalize font-normal text-black hover:text-secondary text-base my-2 py-1 px-5">Properties</a>
                      
@@ -102,14 +105,8 @@
 
                  </li>
 
-                 <li class="relative block border-b-primary border-b"><a href="{{route('blog')}}" class="relative block capitalize text-black hover:text-secondary text-base my-2 py-1 px-5">Blog</a>
-
-
-
-
-                  
-                 </li>
-                 <li class="relative block border-b-primary border-b"><a href="contact.html" class="relative block capitalize text-black hover:text-secondary text-base my-2 py-1 px-5">Contact</a></li>
+                 {{-- <li class="relative block border-b-primary border-b"><a href="{{route('blog')}}" class="relative block capitalize text-black hover:text-secondary text-base my-2 py-1 px-5">Blog</a></li> --}}
+                 {{-- <li class="relative block border-b-primary border-b"><a href="contact.html" class="relative block capitalize text-black hover:text-secondary text-base my-2 py-1 px-5">Contact</a></li> --}}
              </ul>
          </nav>
          <!-- offcanvas-menu end -->
